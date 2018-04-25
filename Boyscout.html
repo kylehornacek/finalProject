@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Boy Scouts</title>
+<link rel="stylesheet" type="text/css" href="SiteCSSFile.css">
+</head>
+<body>
+
+	<!--THIS IS OUR NAVIGATION BAR-->
+	<div class="navScout">
+		<ul>
+			<li><a
+				href="C:\Users\Owner\eclipse-workspace\CMSC264\finalWebsite\Homepage_Sam.html">Home</a></li>
+		</ul>
+	</div>
+
+
+	<div class="background">
+
+		<div class="logo">
+			<img
+				src="C:\Users\Owner\eclipse-workspace\CMSC264\finalWebsite\BoyScoutLogo.png"
+				height=200 width=200>
+		</div>
+
+		<h1 class="w3-center">Scouting Slide Show</h1>
+
+		<div class="text">
+			<p>I have been in the scouting program since I was nine years
+				old. I continued in the program up until I achieved the rank of
+				Eagle Scout. This is the highest rank that can be achieved in
+				scouting. This Page contains pictures from various activities that I
+				have participated in during my scouting career.</p>
+		</div>
+
+		<div class="slide">
+			<div class="slideShow">
+				<img class="mySlides1"
+					src="C:\Users\Owner\eclipse-workspace\CMSC264\finalWebsite\IMG_0101.JPG"
+					width=500 height=400 class="center"> <img class="mySlides1"
+					src="C:\Users\Owner\eclipse-workspace\CMSC264\finalWebsite\IMG_0102.JPG"
+					width=350 height=400 class="center"> <img class="mySlides1"
+					src="C:\Users\Owner\eclipse-workspace\CMSC264\finalWebsite\IMG_0104.JPG"
+					width=375 height=400 class="center"> <img class="mySlides1"
+					src="C:\Users\Owner\eclipse-workspace\CMSC264\finalWebsite\IMG_0409.JPG"
+					width=400 height=400 class="center"> <img class="mySlides1"
+					src="C:\Users\Owner\eclipse-workspace\CMSC264\finalWebsite\IMG_0419.JPG"
+					width=500 height=400 class="center">
+			</div>
+			<button class="next" onclick="plusDivs(-1, 0)">&#10094;</button>
+			<button class="prev" onclick="plusDivs(1, 0)">&#10095;</button>
+		</div>
+	</div>
+
+
+	<script>
+		var slideIndex = [ 1, 1 ];
+		var slideId = [ "mySlides1" ]
+
+		showDivs(1, 0);
+		showDivs(1, 1);
+
+		function plusDivs(n, no) {
+
+			showDivs(slideIndex[no] += n, no);
+		}
+
+		function showDivs(n, no) {
+
+			var i;
+			var x = document.getElementsByClassName(slideId[no]);
+
+			if (n > x.length) {
+				slideIndex[no] = 1
+			}
+
+			if (n < 1) {
+				slideIndex[no] = x.length
+			}
+
+			for (i = 0; i < x.length; i++) {
+
+				x[i].style.display = "none";
+			}
+
+			x[slideIndex[no] - 1].style.display = "block";
+		}
+	</script>
+</body>
+</html>

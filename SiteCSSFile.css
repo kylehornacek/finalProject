@@ -1,0 +1,530 @@
+/* <---------------------------HEADING-1 INFO---------------------------->*/
+
+/* this gives information about h1 tags */
+h1 {
+	/* color of the text */
+	color: black;
+	/* align of the text */
+	text-align: left;
+	/* size of the text */
+	font-size: 4em;
+	/* margin for head */
+	margin: 2.5%;
+	/* give an underline to heads */
+	text-decoration: underline;
+}
+
+/* <---------------------------HEADING-2 INFO---------------------------->*/
+
+h2 {
+	/* margin for head */
+	margin: 1%;	
+}
+
+/* <---------------------------PARAGRAPH INFO---------------------------->*/
+
+.text p {
+	/* this is the spacing for the paragraphs */
+	line-height: 30px;
+	/* this is the width of the paragraph */
+	width: 85%;
+	/* this is the size of our font */
+	font-size: large;
+	/* this causes the text to be alligned on the right */
+	text-align: justify;
+}
+
+/* <---------------------------BODY INFO---------------------------->*/
+
+body {
+	
+	/* this is the margin. we have it at zero so everything touches the edges */
+	margin: 1%;
+	/* font type */
+	font-family: "Arial", serif;
+	background-image: url("file:///C:/Users/Owner/eclipse-workspace/CMSC264/SamHomePage/website%20background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+
+/* <----------------------------HOMEPAGE CSS ------------------------------------------------------------------------> */
+
+/* Style the side navigation */
+.sidenav {
+	
+	margin: 2%;
+	height: 88%;
+	width: 18%;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: #111;
+	overflow-x: hidden;
+}
+
+/* Side navigation links */
+.sidenav a {
+	/* color of text */
+	color: white;
+	/* size of font */
+	font-size: 30px;
+	/* padding */
+	padding: 16px; 
+	/* removes bullet points and other things */
+	text-decoration: none;
+	/* block format */
+	display: block;
+	/* center the text */
+	text-align: center;
+}
+
+/* This makes sure our content is shifted to the left and not in the way of the navigation bar*/
+.content {
+	/* shift it to the left */
+	margin-left: 21%;
+	/* give the left some padding */
+	padding-left: 20px;
+	/* shift the right some */
+	margin-right: 3%;
+	/* give the right some padding */
+	padding-right: 20px;
+	/* shift the top down */
+	margin-bottom: 2%;
+	/* give the top some padding */
+	padding-bottom: 10px;
+	/* shift the top down */
+	margin-top: 2%;
+	/* give the top some padding */
+	padding-top: 10px;
+	/* make the background white */
+	background-color:white;
+	/* color of the boarder along with size */
+	border: 25px solid grey;
+	/* this gives curved corners */
+	border-radius: 25px;
+	/* this is the height of the page */
+	height: 600px;
+}
+
+.content img {
+	float: left;
+	margin-right: 10px;
+ 	border-radius: 10%;
+ 	height: 475px;
+ 	width: 350px;
+}
+
+.content p {
+	text-align: justify;
+	margin-left: 0px;
+	overflow: auto;
+	display: block;
+	font-size:large;
+	line-height: 30px;
+	padding: 1%;
+}
+
+/* <----------------------------PAUPER PAGE CSS ------------------------------------------------------------------------> */
+
+
+/* <---------------------------NAVIGATION BAR INFO PAUPER-------------------------->*/
+
+/* this is the CSS for the lists. We are using this for our navigation bar */
+.nav ul {
+	/* this removes the bullets */
+	list-style-type: none;
+	/* this gets rid of margins (think MW)*/
+	margin: 0;
+	/* this gets rid of padding (padding generates space) */
+	padding: 0;
+	/* this will specify what to do when we overflow the back */
+	overflow: hidden;
+	/* this is the background color of the navigation bar */
+	background-color: grey;
+	/* this makes it cover the entire screen width wise */
+	width: 100%;
+	/* this is the size of our font */
+	font-size: 40px;
+	/* this makes sure our bar stays at the top*/
+	top: 0;
+	/* this creates a border for our navigation bars */
+	border: 1px solid #555;
+}
+
+.nav li {
+	/* this gets the list elements to be next to one another giving us a line*/
+	float: left;
+	/* we make this 25% because we have 4 items in our navigation bar */
+	width: 25%;
+	
+}
+
+/* this is for the text inside the lists */
+.nav a {
+	/* this puts the text in the center */
+	text-align: center;
+}
+
+/* this is what the lists inside the navigation bar will look like */
+.nav li a {
+	/* we are going to display the navigation bar as a block */
+	display: block;
+	/* this is the color of the text inside the bar */
+	color: white;
+	/* this removes things like dotted lines, underlines etc. */
+	text-decoration: none;
+	/* this is the padding for inside of the ul. (first term height, second length) */
+	padding: 10%;
+}
+
+/* Change the link color on hover for navigation bar */
+.nav li a:hover {
+	/* this is the color of the navigation bar when the user hovers over it */
+	background-color: black;
+	/* this is the color of the text inside the bar when the user hovers over it */
+	color: white;
+}
+
+/* <--------------------------------LOGO INFO--------------------------------------->*/
+
+/* This is for our logo at the beginning of the page. This will center it */
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+/* <---------------------------BACKGROUND / MARGIN INFO---------------------------->*/
+
+/* this is CSS for our margin structure */
+.background {
+	/* color of the background */
+	background-color: white;
+	/* color of the boarder along with size */
+	border: 25px solid grey;
+	/* padding size */
+	padding: 25px;
+	/* margin percentage */
+	margin: 3.5%;
+}
+
+/* <------------------BANLIST IMAGES USING TOOL TIP INFO------------------>*/
+.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: none;
+}
+
+.tooltip .tooltipImage {
+	visibility: hidden;
+	color: #fff;
+	text-align: center;
+	border-radius: 60px;
+	padding: 5px;
+	position: absolute;
+	left: 100%;
+	bottom: 25%;
+	z-index: 1;
+	/* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+.tooltip:hover .tooltipImage {
+	visibility: visible;
+	opacity: 1;
+}
+
+/* <------------------BANLIST List info------------------>*/
+.banlist {
+	/* color of the background */
+	background-color: white;
+	/* color of the boarder along with size */
+	border: 25px white;
+}
+
+.banlist ul {
+	/* this is the color of the text in */
+	color: #0080c0;
+	/* this is the size of our font */
+	font-size: large;
+	/* this gets rid of bullet points and such */
+	list-style-type: none;
+	/* this is our margin */
+	margin: 20px;
+	/* this is the spacing between the list */
+	line-height: 30px;
+}
+
+.banlist ul li {
+	text-decoration: none;
+	padding: 10px;
+	margin: 0;
+}
+
+/* <------------------DeckList info------------------>*/
+.decklist {
+	/* color of the background */
+	background-color: #eaeaea;
+	/* color of the boarder along with size */
+	border: 25px solid white;
+	/* padding size */
+	padding: 25px;
+	/* margin percentage */
+	margin: 1%;
+}
+
+.decklist ul {
+	/* this is the color of the text in */
+	color: #0080c0;
+	/* this is the size of our font */
+	font-size: medium;
+	/* this gets rid of bullet points and such */
+	list-style-type: none;
+	/* this is the spacing between the list */
+	line-height: 20px;
+}
+
+.decklist p {
+	/* this is the color of the text in */
+	color: black;
+	/* this is the size of our font */
+	font-size: medium;
+	font-weight: bold;
+}
+
+/* <------------------DeckList images------------------>*/
+.deck_img a span {
+	position: absolute;
+	display: none;
+	z-index: 99;
+}
+
+.deck_img a:hover span {
+	display: block;
+	top: 50%;
+	left: 50%;
+	margin-top: -50px;
+	margin-left: -50px;
+}
+
+
+/* Change color on hover */
+.sidenav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+/* <-------------------------BOY SCOUT PAGE INFO -------------> */
+
+/* <---------------------------NAVIGATION BAR SCOUTING INFO-------------------------->*/
+
+/* this is the CSS for the lists. We are using this for our navigation bar */
+.navScout ul {
+	/* this removes the bullets */
+	list-style-type: none;
+	/* this gets rid of margins (think MW)*/
+	margin: 0;
+	/* this gets rid of padding (padding generates space) */
+	padding: 0;
+	/* this will specify what to do when we overflow the back */
+	overflow: hidden;
+	/* this is the background color of the navigation bar */
+	background-color: grey;
+	/* this makes it cover the entire screen width wise */
+    width: 25%;
+    /* this is the size of our font */
+    font-size: 40px;
+    /* this makes sure our bar stays at the top*/
+    top: 0;
+    /* this creates a border for our navigation bars */
+    border: 1px solid #555;
+}
+
+.navScout li {
+	/* this gets the list elements to be next to one another giving us a line*/
+	float: left;
+	/* we make this 25% because we have 4 items in our navigation bar */
+	width: 100%;
+}
+
+/* this is for the text inside the lists */
+.navScout a {
+	/* this puts the text in the center */
+	text-align: center;
+}
+
+/* this is what the lists inside the navigation bar will look like */
+.navScout li a {
+	/* we are going to display the navigation bar as a block */
+	display: block;
+	/* this is the color of the text inside the bar */
+	color: white;
+	/* this removes things like dotted lines, underlines etc. */
+	text-decoration: none;
+	/* this is the padding for inside of the ul. (first term height, second length) */
+	padding: 10%;
+}
+
+/* Change the link color on hover for navigation bar */
+.navScout li a:hover {
+	/* this is the color of the navigation bar when the user hovers over it */
+	background-color: black;
+	/* this is the color of the text inside the bar when the user hovers over it */
+	color: white;
+}
+
+/* <-------------------------BUTTONS FOR SLIDE SHOW --------------------->*/
+.next {
+	/* what's inside the button */
+	cursor: pointer;
+	/* position of button */
+    position: absolute;
+    /* how far down from top we are */
+    top: 100%;
+    /* with of button */
+    width: auto;
+    /* padding for button */
+    padding: 16px;
+    /* margin for button from the top */
+    margin-top: -22px;
+    /* color inside the button */
+    color: black;
+    /* font weight for button */
+    font-weight: bold;
+    /* size for font inside button */
+	font-size: 18px;
+	/* size and border radius */
+	border-radius: 11px 11px 11px 11px;
+}
+
+/* Change the button color on hover */
+.next:hover {
+	/* this is the color of the navigation bar when the user hovers over it */
+	background-color: black;
+	/* this is the color of the text inside the bar when the user hovers over it */
+	color: white;
+}
+.prev {
+	
+	/* what's inside the button */
+	cursor: pointer;
+	/* position of button */
+    position: absolute;
+    /* how far down from top we are */
+    top: 100%;
+    right: 10%;
+    /* with of button */
+    width: auto;
+    /* padding for button */
+    padding: 16px;
+    /* margin for button from the top */
+    margin-top: -22px;
+    /* color inside the button */
+    color: black;
+    /* font weight for button */
+    font-weight: bold;
+    /* size for font inside button */
+	font-size: 18px;
+	/* size and border radius */
+	border-radius: 11px 11px 11px 11px;
+}
+
+/* Change the button color on hover */
+.prev:hover {
+	/* this is the color of the navigation bar when the user hovers over it */
+	background-color: black;
+	/* this is the color of the text inside the bar when the user hovers over it */
+	color: white;
+}
+
+/* <---------------------------BACKGROUND FOR SLIDE SHOW---------------------------->*/
+
+.slide {
+	
+	/* color of the background */
+    background-color: #b1b1b1;
+    margin-top: 2%;
+    padding: 25px;
+    position: inline;
+    border-style: solid;
+    border-color: black;
+    display:block;
+}
+
+.slideShow img {
+    display: block;
+    position:relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* <---------------------------BOYSCOUT LOGO INFO---------------------------->*/
+.logo {
+	
+	/* have it float to the right */
+	float: right;		
+}
+
+/* <-------------------------------------PERCUSSION PAGE INFO ------------------------------------> */
+
+/* <---------------------------NAVIGATION BAR SCOUTING INFO-------------------------->*/
+
+/* this is the CSS for the lists. We are using this for our navigation bar */
+.navMusic ul {
+	/* this removes the bullets */
+	list-style-type: none;
+	/* this gets rid of margins (think MW)*/
+	margin: 0;
+	/* this gets rid of padding (padding generates space) */
+	padding: 0;
+	/* this will specify what to do when we overflow the back */
+	overflow: hidden;
+	/* this is the background color of the navigation bar */
+	background-color: grey;
+	/* this makes it cover the entire screen width wise */
+    width: 25%;
+    /* this is the size of our font */
+    font-size: 40px;
+    /* this makes sure our bar stays at the top*/
+    top: 0;
+    /* this creates a border for our navigation bars */
+    border: 1px solid #555;
+}
+
+.navMusic li {
+	/* this gets the list elements to be next to one another giving us a line*/
+	float: left;
+	/* we make this 25% because we have 4 items in our navigation bar */
+	width: 100%;
+}
+
+/* this is for the text inside the lists */
+.navMusic a {
+	/* this puts the text in the center */
+	text-align: center;
+}
+
+/* this is what the lists inside the navigation bar will look like */
+.navMusic li a {
+	/* we are going to display the navigation bar as a block */
+	display: block;
+	/* this is the color of the text inside the bar */
+	color: white;
+	/* this removes things like dotted lines, underlines etc. */
+	text-decoration: none;
+	/* this is the padding for inside of the ul. (first term height, second length) */
+	padding: 10%;
+}
+
+/* Change the link color on hover for navigation bar */
+.navMusic li a:hover {
+	/* this is the color of the navigation bar when the user hovers over it */
+	background-color: black;
+	/* this is the color of the text inside the bar when the user hovers over it */
+	color: white;
+}
